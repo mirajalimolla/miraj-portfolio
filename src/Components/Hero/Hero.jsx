@@ -13,7 +13,7 @@ import { BiSolidRightArrowAlt } from 'react-icons/bi';
 
 function Hero({ myRef }) {
     const [linkedinHover, setLinkedinHover] = useState(false);
-    const [githubHover, setGithubHover] = useState(false);
+    const [facebookHover, setFacebookHover] = useState(false);
     const [whatsappHover, setWhatsappHover] = useState(false);
     const { onScreen, head } = observer();
     const [isMoreAboutMongoHover, setIsMoreAboutMongoHover] = useState(false);
@@ -79,9 +79,9 @@ function Hero({ myRef }) {
                         </Link>
                     </div>
                     <div className='text-center grid place-items-center'>
-                        <span className={`${githubHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>Github</span>
+                        <span className={`${facebookHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>Facebook</span>
                         <Link to={'https://www.facebook.com/profile.php?id=100084295661029'} target="_blank">
-                            <FaFacebook size={30} onMouseEnter={() => setGithubHover(true)} onMouseLeave={() => setGithubHover(false)} className="icon cursor-pointer relative" />
+                            <FaFacebook size={30} onMouseEnter={() => setFacebookHover(true)} onMouseLeave={() => setFacebookHover(false)} className="icon cursor-pointer relative" />
                         </Link>
                     </div>
                     <div className='text-center grid place-items-center'>

@@ -6,7 +6,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'rea
 function Footer() {
     const [whatsappHover, setWhatsappHover] = useState(false);
     const [linkedinHover, setLinkedinHover] = useState(false);
-    const [xHover, setXHover] = useState(false);
+    const [facebookHover, setFacebookHover] = useState(false);
     const [instagramHover, setInstagramHover] = useState(false);
     const [githubHover, setGithubHover] = useState(false);
     
@@ -29,9 +29,9 @@ function Footer() {
                         </Link>
                     </div>
                     <div className='flex flex-col items-center w-15'>
-                        <span className={`${xHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>X</span>
+                        <span className={`${facebookHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>Facebook</span>
                         <Link to={'https://www.facebook.com/profile.php?id=100084295661029'} target="_blank">
-                            <FaFacebook size={30} onMouseEnter={() => setGithubHover(true)} onMouseLeave={() => setGithubHover(false)} className="icon cursor-pointer relative" />
+                            <FaFacebook size={30} onMouseEnter={() => setFacebookHover(true)} onMouseLeave={() => setFacebookHover(false)} className="icon cursor-pointer relative" />
                         </Link>
                     </div>
                     <div className='flex flex-col items-center w-15'>
