@@ -1,0 +1,451 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #0C0C0C;
+    color: white;
+    max-width: 100vw;
+}
+
+.section-container {
+    width: 85vw;
+    margin: auto;
+}
+
+@media only screen and (max-width:950px) {
+    .section-container {
+        width: 90vw;
+    }
+
+    .about {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width:905px) {
+    .firstHeading {
+        font-size: 44px;
+    }
+
+    .secondHeading{
+        font-size: 32px;
+    }
+
+    .thirdHeading {
+        font-size: 22px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+
+    .projectImage{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:810px) {
+    .firstHeading {
+        font-size: 41px;
+    }
+
+    .aboutBtn {
+        font-size: 17px;
+        height: 40px;
+    }
+    
+    .skillTag div {
+        font-size: 14px;
+    }
+
+    .contact-text {
+        font-size: 17px;
+    }
+
+    .about {
+        width: 95vw;
+    }
+
+    .client-info{
+        bottom: -35%;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .firstHeading {
+        font-size: 38px;
+    }
+
+    .aboutBtn {
+        font-size: 15px;
+        height: 36px;
+    }
+
+    .logo{
+        height: 90%;
+    }
+    
+    .link {
+        margin-right: 0px;
+    }
+
+    .link li {
+        font-size: 14px;
+    }
+
+    .skillTag div {
+        font-size: 12px;
+    }
+
+    .projectImage img{
+        width: 95%;
+    }
+
+    .cornerBorder {
+        height: 16px;
+        width: 16px;
+    }
+
+    .longBorder {
+        height: 36px;
+    }
+
+    .longBorder:first-child {
+        top: -16px;
+    }
+
+    .longBorder:last-child {
+        bottom: -16px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .firstHeading {
+        font-size: 35px;
+    }
+
+    .secondHeading {
+        font-size: 28px;
+    }
+    
+    .thirdHeading {
+        font-size: 18px;
+    }
+    
+    .client-arrow:last-child{
+        position: absolute;
+        right: 5px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .firstHeading {
+        font-size: 32px;
+    }
+
+    .about {
+        width: 90vw;
+    }
+
+    .aboutImg {
+        display: none;
+    }
+
+    .aboutText {
+        width: 100%;
+        padding: 0px 40px;
+    }
+
+    .aboutText .secondHeading {
+        text-align: center;
+    }
+
+    .aboutText .description {
+        text-align: center;
+    }
+
+    .aboutText .skillTag {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .section-container {
+        width: 95vw;
+    }
+}
+
+/* This is for mobile  */
+@media only screen and (max-width:555px) {
+    /* Project Styling */
+    .devider, .circle, .heroImg{
+        display: none;
+    }
+
+    .header {
+        padding-block: 3px;
+        height: 12vh;
+    }
+
+    .mobileImg{
+        display: block;
+        transform: skewX(335deg);
+        z-index: -1;
+    }
+    
+    .heroText {
+        display: grid;
+        place-items: center;
+        width: 100%;
+    }
+
+    .myProfession{
+        color: #CF1C1B;
+    }
+
+    .firstHeading {
+        font-size: 43px;
+    }
+    
+    .secondHeading {
+        font-size: 32px;
+    }
+    
+    .thirdHeading {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .skillTag div{
+        font-size: 15px;
+    }
+
+    .project-container{
+        padding-top: 30px;
+    }
+
+    .project{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imagePart {
+        width: 80%;
+        margin: auto;
+    }
+
+    .textPart {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding: 10px 0px 0px;
+    }
+
+    .skillTag{
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Client styling */
+    .client-card{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .client-card div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .client-card div img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .client-card div p {
+        font-size: 16px;
+    }
+    
+    .client-info {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+    .clietnName {
+        font-size: 35px;
+    }
+
+    .clientProfession {
+        font-size: 20px;
+    }
+
+    .client-arrow{
+        height: 435px !important;
+    }
+
+    /* Contact  */
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:510px) {
+    .firstHeading {
+        font-size: 40px;
+    }
+
+    .link {
+        gap: 20px;
+    }
+    
+    .mobileImg {
+        transform: skewX(345deg);
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .firstHeading {
+        font-size: 36.5px;
+    }
+
+    .secondHeading {
+        font-size: 29px;
+    }
+
+    .thirdHeading {
+        font-size: 20px;
+    }
+
+    .skillTag div {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:435px) {
+    .firstHeading {
+        font-size: 34px;
+    }
+
+    .secondHeading {
+        font-size: 27px;
+    }
+
+    .thirdHeading {
+        font-size: 19px;
+    }
+
+    .textPart {
+        width: 95%;
+    }
+}
+
+/* Hide the links and show the menu icon  */
+@media only screen and (max-width:415px) {
+    .link {
+        justify-content: center;
+        position: absolute;
+        left: 0px;
+        top: -100%;
+        height: 12%;
+        width: 100%;
+        background-color: #2f2f2f;
+    }
+
+    .link li {
+        font-size: 12px;
+    }
+
+    .menuBar {
+        display: block;
+    }
+
+    .firstHeading {
+        font-size: 32px;
+    }
+
+    .client-arrow svg {
+        height: 45px;
+    }
+
+    .longBorder {
+        height: 30px;
+    }
+
+    .longBorder:first-child {
+        top: -15px;
+    }
+
+    .longBorder:last-child {
+        bottom: -13px;
+    }
+
+    .cornerBorder {
+        width: 14px;
+        height: 14px;
+    }
+
+    .aboutText .secondHeading{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .firstHeading {
+        font-size: 30px;
+    }
+
+    .about {
+        width: 98%;
+    }
+    
+    .aboutText {
+        gap:25px;
+        padding: 0px 12px;
+    }
+
+    .closeAbout {
+        height: 31px;
+    }
+
+    .aboutText .description {
+        font-size: 15px;
+    }
+    
+    .iconSkill div svg{
+        height: 45px;
+    }
+
+    .iconSkill div h1{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .firstHeading {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .icon {
+        height: 25px;
+    }
+}
