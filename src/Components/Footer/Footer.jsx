@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png'
-import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 function Footer() {
     const [whatsappHover, setWhatsappHover] = useState(false);
@@ -31,13 +30,13 @@ function Footer() {
                     </div>
                     <div className='flex flex-col items-center w-15'>
                         <span className={`${xHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>X</span>
-                        <Link to={'google.com'} target="_blank">
-                            <FaXTwitter size={30} onMouseEnter={() => setXHover(true)} onMouseLeave={() => setXHover(false)} className="icon cursor-pointer relative" />
+                        <Link to={'https://www.facebook.com/profile.php?id=100084295661029'} target="_blank">
+                            <FaFacebook size={30} onMouseEnter={() => setGithubHover(true)} onMouseLeave={() => setGithubHover(false)} className="icon cursor-pointer relative" />
                         </Link>
                     </div>
                     <div className='flex flex-col items-center w-15'>
                         <span className={`${instagramHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>Instagram</span>
-                        <Link to={'google.com'} target="_blank">
+                        <Link to={'https://www.instagram.com/developer_miraj/profilecard/?igsh=ZHhvNDVpaWFtdGgz'} target="_blank">
                             <FaInstagram size={30} onMouseEnter={() => setInstagramHover(true)} onMouseLeave={() => setInstagramHover(false)} className="icon cursor-pointer relative" />
                         </Link>
                     </div>
