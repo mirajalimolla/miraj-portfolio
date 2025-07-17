@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import Heading from '../../../src/Components/Component_Needs/Heading';
 import ClientCard from './ClientCard';
-import client from '../../assets/img.jpg'
 import gymOwner from '../../assets/gymOwner.jpg'
 import mtGamersOwner from '../../assets/mtGamersOwner.png'
+import biswanath from '../../assets/biswanath.jpg';
 import { PiGreaterThanBold, PiLessThanBold } from 'react-icons/pi';
 
 function Client({myRef}) {
@@ -67,7 +67,7 @@ function Client({myRef}) {
 
                         <ClientCard  image={mtGamersOwner} description={"Working with Freelancer Miraj was an amazing experience! Miraj built an amazing gaming website for me — fast, modern, and mobile-friendly. Highly recommended for anyone looking for a pro developer!"} name={"Rahul Khan"} profession={"Founder MT Gamers"}/>
 
-                        <ClientCard  image={client} description={"Miraj designed a beautiful wedding invitation website that felt elegant and personal. Everything worked smoothly on mobile and it impressed all our guests. Highly recommended for special occasion websites!"} name={"Biswanat Das"} profession={"Invitation Website"}/>
+                        <ClientCard  image={biswanath} description={"Miraj designed a beautiful wedding invitation website that felt elegant and personal. Everything worked smoothly on mobile and it impressed all our guests. Highly recommended for special occasion websites!"} name={"Biswanat Das"} profession={"Invitation Website"}/>
                     </div>
                 </div>
             </div>
