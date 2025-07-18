@@ -46,8 +46,8 @@ function Header({myRef}) {
     }
     
     return (
-        <header className={`${scroll} w-full flex items-center text-[#d8d8d8]`}>
-            <div className="section-container header flex items-center justify-between h-20 py-2">
+        <header className={`${scroll} h-[12%] w-full flex items-center text-[#d8d8d8] p-1.5`}>
+            <div className="section-container header flex items-center justify-between h-full">
                 <img src={logo} alt="logo" className='logo h-full relative' />
                 <div className='flex items-center'>
                     <ul ref={links} className='link flex items-center gap-7 mr-5 max-h-[70px] font-bold text-md transition-all duration-400'>

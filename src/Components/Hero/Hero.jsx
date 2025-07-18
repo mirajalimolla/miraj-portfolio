@@ -43,9 +43,9 @@ function Hero({ myRef }) {
     }
 
     return (
-        <section ref={myRef}>
-            <div className="section-container h-[87vh] pb-2">
-                <div className='h-[87%] flex items-center justify-between'>
+        <section ref={myRef} className=" h-[88%]">
+            <div className="section-container h-full">
+                <div className='h-[85%] flex items-center justify-between'>
                     <div className="heroText mt-8">
                         <h1 ref={head} className="firstHeading text-5xl h-17 font-bold relative w-fit">
                             <span className={`${onScreen ? "h-full" : "h-0"} transition-all duration-1500 block overflow-hidden`}>Hi</span>
@@ -71,6 +71,7 @@ function Hero({ myRef }) {
                         <img src={mobileImage} className="h-full" />
                     </div>
                 </div>
+
                 <div className='flex items-center h-[15%]'>
                     <div className='text-center grid place-items-center'>
                         <span className={`${whatsappHover ? "visible" : "invisible"} text-[11px] bg-white text-black px-1.5 py-1 font-[700] tracking-[0.3px] rounded-md mb-1`}>WhatsApp</span>
