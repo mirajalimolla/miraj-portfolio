@@ -16,7 +16,7 @@ function App() {
     return (
         <>
             <section className='relative h-[100vh] text-white'>
-                {/* <Particle /> */}
+                <Particle className="hidden" />
                 <Header myRef={{
                     project, client, contact, home
                 }}/>
