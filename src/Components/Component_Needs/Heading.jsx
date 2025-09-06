@@ -13,7 +13,7 @@ function Hrading({text, addClass}) {
 
                 <span style={{clipPath: "polygon(0 0, 100% 0, 100% 100%, 70% 100%, 70% 30%, 0 30%)"}} className={`${onScreen ? "top-[6px]" : "top-[-8px]"} cornerBorder transition-all duration-1200 absolute right-[-9px] h-5 w-5 bg-red-500`}></span>
             </div>
-            
+
             <span style={{clipPath: "polygon(8% 40%, 100% 40%, 100% 55%, 0% 55%)"}} className={`${onScreen ? "opacity-100 right-[-10%]" : "right-[-100%]"} longBorder transition-all duration-1500 opacity-0 bg-red-500 h-11 w-1/2 inline-block absolute bottom-[-22px]`}></span>
         </div>
     );

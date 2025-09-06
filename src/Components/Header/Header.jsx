@@ -1,6 +1,8 @@
 import { VscThreeBars } from 'react-icons/vsc';
 import logo from '../../assets/logo.png';
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
+import { BsFillMoonFill } from 'react-icons/bs';
+import { ThemeContext } from '../Component_Needs/ThemeChanger';
 
 function Header({myRef}) {
     const menu = useRef(null);
@@ -12,6 +14,9 @@ function Header({myRef}) {
     const [scroll, setScroll] = useState("");
     const transition = "transition-all duration";
     const [headeropen, setHeaderOpen] = useState(false);
+
+    // Theme data from other component 
+    const {theme, toggleTheme} = useContext(ThemeContext);
 
     useEffect(() => {
         menu.current.addEventListener("click", function(){
@@ -42,8 +47,8 @@ function Header({myRef}) {
     const scrollSet = (ref) => {
         const y = ref.current.getBoundingClientRect().top + window.pageYOffset - 80;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        console.log(headerHeight);
     }
+
     
     return (
         <header className={`${scroll} h-[12%] w-full flex items-center text-[#d8d8d8] p-1.5`}>
@@ -67,6 +72,7 @@ function Header({myRef}) {
                         false)}>CONTACT
                             <span className={`${contactHover ? "w-full" : "w-0"} h-[2px] bg-[#CF1C1B] block ${transition}-500`}></span>
                         </li>
+                        <li className='cursor-pointer' onClick={() => toggleTheme()}><BsFillMoonFill size={25} /></li>
                     </ul>
                     <VscThreeBars ref={menu} size={27} className='menuBar mr-1 hidden'/>
                 </div>

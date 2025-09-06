@@ -158,7 +158,7 @@ const Particle = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full"
+      className="absolute hidden sm:block inset-0 w-full h-full"
     />
   );
 };
