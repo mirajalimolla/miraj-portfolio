@@ -16,7 +16,7 @@ function Hero({ myRef }) {
     const [linkedinHover, setLinkedinHover] = useState(false);
     const [facebookHover, setFacebookHover] = useState(false);
     const [whatsappHover, setWhatsappHover] = useState(false);
-    const [isAnimationOff, setIsAnimationOff] = useState(false);
+    const [isAnimationOff, setIsAnimationOff] = useState(true);
     const { onScreen, head } = observer();
     const [isMoreAboutMongoHover, setIsMoreAboutMongoHover] = useState(false);
     const [isMoreAboutExpressHover, setIsMoreAboutExpressHover] = useState(false);
