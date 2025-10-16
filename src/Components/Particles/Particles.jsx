@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const Particle = () => {
+const Particles = () => {
   const canvasRef = useRef(null);
   const animationRef = useRef(null);
   const particlesRef = useRef([]);
@@ -163,4 +163,4 @@ const Particle = () => {
   );
 };
 
-export default Particle;
+export default Particles;

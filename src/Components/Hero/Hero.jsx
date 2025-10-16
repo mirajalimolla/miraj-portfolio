@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLine, FaWhatsapp } from 'react-icons/fa'
 import heroImg from '../../assets/img.jpg'
+import Particles from "../Particles/Particles";
 import mobileImage from '../../assets/borderLogo.png'
 import moreAboutImg from '../../assets/moreAbout.svg'
 import { FaNodeJs, FaReact } from 'react-icons/fa';
@@ -15,6 +16,7 @@ function Hero({ myRef }) {
     const [linkedinHover, setLinkedinHover] = useState(false);
     const [facebookHover, setFacebookHover] = useState(false);
     const [whatsappHover, setWhatsappHover] = useState(false);
+    const [isAnimationOff, setIsAnimationOff] = useState(false);
     const { onScreen, head } = observer();
     const [isMoreAboutMongoHover, setIsMoreAboutMongoHover] = useState(false);
     const [isMoreAboutExpressHover, setIsMoreAboutExpressHover] = useState(false);
@@ -44,6 +46,7 @@ function Hero({ myRef }) {
 
     return (
         <section ref={myRef} className=" h-[88%]">
+            {isAnimationOff === false ? <Particles /> : ''}
             <div className="section-container h-full">
                 <div className='h-[85%] flex items-center justify-between'>
                     <div className="heroText mt-8">
@@ -56,13 +59,18 @@ function Hero({ myRef }) {
                         <h1 ref={head} className="firstHeading text-5xl h-17 font-bold relative w-fit">
                             <span className={`${onScreen ? "h-full" : "h-0"} transition-all duration-1500 block overflow-hidden`}>I'm a <span className='myProfession'>Web Developer</span></span>
                         </h1>
-                        <button className={`${onScreen ? "h-11" : "h-0"} aboutBtn relative px-4 pr-7 transition-all duration-800 overflow-hidden bg-[#c51f1f] 4ont-1.5old rounded-lg text-lg cursor-pointer flex items-center`} onClick={() => setOpenAbout(true)} onMouseEnter={() => setIsAboutBtnHover(true)} onMouseLeave={() => setIsAboutBtnHover(false)}>
+                        <button className={`${onScreen ? "h-11" : "h-0"} aboutBtn relative px-4 pr-7 transition-all duration-800 overflow-hidden bg-[#c51f1f] font-bold rounded-lg text-lg cursor-pointer flex items-center`} onClick={() => setOpenAbout(true)} onMouseEnter={() => setIsAboutBtnHover(true)} onMouseLeave={() => setIsAboutBtnHover(false)}>
                             About Me <BiSolidRightArrowAlt className={`${isAboutBtnHover ? 'arrowAnimate' : ''} text-4xl opacity-0 absolute top-1/2 right-[0px] translate-[-50%]`} />
                         </button>
+                        <div className={`${onScreen ? "h-5.5" : "h-0"} relative flex items-center w-fit gap-2 mt-2 ml-2 transition-all duration-800 overflow-hidden`}>
+                            <span>Animation</span>
+                            <div onClick={() => setIsAnimationOff(isAnimationOff === false ? true : false)} className={`relative flex justify-between w-12 h-5 rounded-2xl cursor-pointer transition-all duration-500 border-2 ${isAnimationOff === false ? 'border-green-500' : 'border-red-500'}`}>
+                                <span className={`absolute text-[11px] font-extrabold ${isAnimationOff === true ? 'text-red-500 right-0.5' : 'text-green-500 left-0.5'}`}>{isAnimationOff === true ? 'ON' : 'OFF'}</span>
+                                <span className={`absolute ${isAnimationOff === false ? 'translate-x-[130%] bg-red-500 w-[40%]' : 'translate-x-0 bg-green-500 w-[45%]'} m-0.5 h-[80%] rounded-2xl transition-all duration-500`}></span>
+                            </div>
+                        </div>
                     </div>
-                    {/* <div style={{clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"}} className='bg-[#CF1C1B] h-[60%] w-[40%] rounded'>
-                        <img src={heroImg} className='h-full'/>
-                    </div> */}
+
                     <div style={{ clipPath: "polygon(51% 0, 90% 30%, 90% 70%, 50% 100%, 50% 100%, 10% 70%, 10% 30%)" }} className='heroImg w-1/3 mt-15'>
                         <img src={heroImg} className='h-full' />
                     </div>

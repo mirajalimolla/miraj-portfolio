@@ -4,7 +4,6 @@ import Client from './Components/Client/Client.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Hero from './Components/Hero/Hero.jsx'
-import Particle from './Components/Particles/Particles.jsx'
 import Projects from './Components/Project/Projects.jsx'
 import ThemeProvider from './Components/Component_Needs/ThemeChanger.jsx'
 import { ThemeContext } from './Components/Component_Needs/ThemeChanger.jsx'
@@ -28,7 +27,6 @@ function App() {
     return (
         <>
             <section className={`relative h-[100vh] ${themeStyle}`}>
-                {/* <Particle /> */}
                 <ThemeProvider>
                     <Header myRef={{
                         project, client, contact, home
