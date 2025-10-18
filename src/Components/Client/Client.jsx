@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import Heading from '../../../src/Components/Component_Needs/Heading';
 import ClientCard from './ClientCard';
-import gymOwner from '../../assets/gymOwner.jpg'
-import mtGamersOwner from '../../assets/mtGamersOwner.png'
-import biswanath from '../../assets/biswanath.jpg';
+import gymOwner from '../../../public/gymOwner.jpg'
+import mtGamersOwner from '../../../public/mtGamersOwner.png'
+import biswanath from '../../../public/biswanath.jpg';
 import { PiGreaterThanBold, PiLessThanBold } from 'react-icons/pi';
 
 function Client({myRef}) {

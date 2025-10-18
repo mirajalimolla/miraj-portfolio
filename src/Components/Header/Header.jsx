@@ -1,5 +1,5 @@
 import { VscThreeBars } from 'react-icons/vsc';
-import logo from '../../assets/logo.png';
+import logo from '../../../public/logo.png';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { BsFillMoonFill } from 'react-icons/bs';
 import { ThemeContext } from '../Component_Needs/ThemeChanger';

@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import Heading from '../Component_Needs/Heading.jsx'
 import ProjectCard from './ProjectCard.jsx';
-import fitZone from '../../assets/fitZone.png'
-import mtGamers from '../../assets/mtGamers.png';
-import invitation from '../../assets/invitation.png'
+import fitZone from '../../../public/fitZone.png'
+import mtGamers from '../../../public/mtGamers.png';
+import invitation from '../../../public/invitation.png'
 
 function Projects({ myRef }) {
     const projectSection = useRef(null);

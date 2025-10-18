@@ -1,5 +1,5 @@
 import Heading from '../Component_Needs/Heading'
-import image from '../../assets/contact.svg'
+import image from '../../../public/contact.svg'
 import { FaTelegramPlane, FaUser } from 'react-icons/fa';
 import { MdMessage } from 'react-icons/md';
 import { PiAtBold } from 'react-icons/pi';

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FaFacebook, FaInstagram, FaLine, FaWhatsapp } from 'react-icons/fa'
-import heroImg from '../../assets/img.jpg'
+import heroImg from '../../../public/img.jpg'
 import Particles from "../Particles/Particles";
-import mobileImage from '../../assets/borderLogo.png'
-import moreAboutImg from '../../assets/moreAbout.svg'
+import mobileImage from '../../../public/borderLogo.png'
+import moreAboutImg from '../../../public/moreAbout.svg'
 import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiExpress } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
@@ -62,9 +62,9 @@ function Hero({ myRef }) {
                         <button className={`${onScreen ? "h-11" : "h-0"} aboutBtn relative px-4 pr-7 transition-all duration-800 overflow-hidden bg-[#c51f1f] font-bold rounded-lg text-lg cursor-pointer flex items-center`} onClick={() => setOpenAbout(true)} onMouseEnter={() => setIsAboutBtnHover(true)} onMouseLeave={() => setIsAboutBtnHover(false)}>
                             About Me <BiSolidRightArrowAlt className={`${isAboutBtnHover ? 'arrowAnimate' : ''} text-4xl opacity-0 absolute top-1/2 right-[0px] translate-[-50%]`} />
                         </button>
-                        <div className={`${onScreen ? "h-5.5" : "h-0"} relative flex items-center w-fit gap-2 mt-2 ml-2 transition-all duration-800 overflow-hidden`}>
-                            <span>Animation</span>
-                            <div onClick={() => setIsAnimationOff(isAnimationOff === false ? true : false)} className={`relative flex justify-between w-12 h-5 rounded-2xl cursor-pointer transition-all duration-500 border-2 ${isAnimationOff === false ? 'border-green-500' : 'border-red-500'}`}>
+                        <div className={`${onScreen ? "h-5.5" : "h-0"} relative hidden sm:block items-center w-fit gap-2 mt-2 ml-2 transition-all duration-800 overflow-hidden`}>
+                            <span className="float-left mr-2">Animation</span>
+                            <div onClick={() => setIsAnimationOff(isAnimationOff === false ? true : false)} className={`relative mt-0.5 flex justify-between w-12 h-5 rounded-2xl cursor-pointer transition-all duration-500 border-2 ${isAnimationOff === false ? 'border-green-500' : 'border-red-500'}`}>
                                 <span className={`absolute text-[11px] font-extrabold ${isAnimationOff === true ? 'text-red-500 right-0.5' : 'text-green-500 left-0.5'}`}>{isAnimationOff === true ? 'ON' : 'OFF'}</span>
                                 <span className={`absolute ${isAnimationOff === false ? 'translate-x-[130%] bg-red-500 w-[40%]' : 'translate-x-0 bg-green-500 w-[45%]'} m-0.5 h-[80%] rounded-2xl transition-all duration-500`}></span>
                             </div>

@@ -1,11 +1,4 @@
 import { useRef, useState } from 'react';
-import { BiArrowFromTop } from 'react-icons/bi';
-import { BsBoxArrowInDown, BsBoxArrowInDownRight, BsBoxArrowInRight, BsBoxArrowInUp, BsBoxArrowInUpLeft, BsBoxArrowInUpRight, BsFeather, BsOpencollective } from 'react-icons/bs';
-import { FaNetworkWired } from 'react-icons/fa';
-import { FaBoxesStacked, FaOpencart } from 'react-icons/fa6';
-import { ImNewTab } from 'react-icons/im';
-import { PiArrowsOutSimple } from 'react-icons/pi';
-import { RiArrowUpBoxFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 function ProjectCard({ reverse = false, color, image, heading, link, subHeading, description, tags }) {
